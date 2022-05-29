@@ -1,0 +1,67 @@
+{
+    "Flotilla Ltd - Leeds" :
+    {
+        "2019": {        
+            "energy": 500,
+            "water": 250,
+            "waste": 350,
+            "travel": 4000,
+            "postage": 6890,
+            "stationery": 4855
+        },
+        "2020": {        
+            "energy": 750,
+            "water": 322,
+            "waste": 4215,
+            "travel": 322,
+            "postage": 698,
+            "stationery": 3500
+        }
+    },
+    "Flotilla Ltd - London" :
+    {
+        "2019": {        
+            "energy": 1500,
+            "water": 6654,
+            "waste": 45468,
+            "travel": 45645,
+            "postage": 5544,
+            "stationery": 2544
+        },
+        "2020": {        
+            "energy": 1650,
+            "water": 7888,
+            "waste": 3655,
+            "travel": 24454,
+            "postage": 5446,
+            "stationery": 200
+        }
+    },
+    "Flotilla Ltd - Edinburgh" :
+    {
+        "2019": {        
+            "energy": 3655,
+            "water": 45465,
+            "waste": 6558,
+            "travel": 2455,
+            "postage": 2445,
+            "stationery": 26444
+        },
+        "2020": {        
+            "energy": 2264,
+            "water": 220,
+            "waste": 3654,
+            "travel": 3655,
+            "postage": 225,
+            "stationery": 2546
+        }
+    },
+    "Formula": {
+        "energy": 0.01255,
+        "water": 0.00654,
+        "waste": 0.00987,
+        "travel": 0.00425,
+        "postage": 0.0365,
+        "stationery": 0.00025
+    }
+}
