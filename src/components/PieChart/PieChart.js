@@ -1,15 +1,16 @@
 //PieChart.js Code
+import "./../../styles/pieChart.scss"
 import React from 'react';
 import { Doughnut} from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
 const state = {
-    labels: ['IT', 'Accounting', 'Human Resource',
-        'Cleaning', 'Security'],
+    labels: ['Energy', 'Water', 'Waste',
+        'Travel', 'Postage', 'Stationery'],
     datasets: [
         {
-            label: 'department',
+            label: 'Category',
             backgroundColor: [
                 '#B21F00',
                 '#C9DE00',
@@ -32,23 +33,31 @@ const state = {
 export default class PieChart extends React.Component {
     render() {
         return (
-            <div>
-
-
+            <div className='pieChart'>
                 <Doughnut
                     data={state}
                     options={{
-                        title:{
-                            display:true,
-                            text:'Average Employee Salary According to the Department',
-                            fontSize:20
-                        },
-                        legend:{
-                            display:true,
-                            position:'right'
+                        plugins: {
+                            title: {
+                                display:true,
+                                text:'Flotilla Carbon Footprint Score by Category',
+                                font: {
+                                    size: 25
+                                }
+                            },
+                            legend:{
+                                display:true,
+                                position:'right'
+                            }
                         }
                     }}
                 />
+                <div className="buttons">
+                    <button className="leeds">Leeds</button>
+                    <button className="london">London</button>
+                    <button className="edinburgh">Edinburgh</button>
+                    <button className="total">Total</button>
+                </div>
             </div>
         );
     }

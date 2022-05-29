@@ -11,7 +11,7 @@ function App() {
       <Header/>  
     </div>  
   
-      <div>
+      <div className='charts'>
           <div className =" ui container">
             <BarChart1/>
           </div>

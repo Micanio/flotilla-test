@@ -1,8 +1,10 @@
 //BarChart.js Code
+import "./../../styles/barChart.scss"
 import React from 'react';
 import {Bar} from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
+
 
 
 const state = {
@@ -32,14 +34,18 @@ export default class BarChart1 extends React.Component {
                 <Bar
                     data={state}
                     options={{
-                        title:{
-                            display:true,
-                            text:'Flotilla Carbon Footprint Score by Location',
-                            fontSize:20
-                        },
-                        legend:{
-                            display:true,
-                            position:'right'
+                        plugins: {
+                            title:{
+                                display:true,
+                                text:'Flotilla Carbon Footprint Score by Location',
+                                font: {
+                                    size:25
+                                }
+                            },
+                            legend:{
+                                display:true,
+                                position:'top'
+                            }
                         }
                     }}
                 />

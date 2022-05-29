@@ -39,14 +39,18 @@ export default class BarChart extends React.Component {
                 <Bar
                     data={state}
                     options={{
-                        title:{
-                            display:true,
-                            text:'Average Employee Salary per Month',
-                            fontSize:20
-                        },
-                        legend:{
-                            display:true,
-                            position:'right'
+                        plugins: {
+                            title:{
+                                display:true,
+                                text:'Average Employee Salary per Month',
+                                font: {
+                                    size:25
+                                }
+                            },
+                            legend:{
+                                display:true,
+                                position:'right'
+                            }
                         }
                     }}
                 />
