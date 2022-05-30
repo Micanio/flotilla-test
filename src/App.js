@@ -3,6 +3,10 @@ import './App.scss';
 import Header from "./components/Header/Header"
 import BarChart1 from "./components/BarChart/BarChart1";
 import PieChart from "./components/PieChart/PieChart";
+import PieChart2 from "./components/PieChart/PieChart2";
+import PieChart3 from "./components/PieChart/PieChart3";
+import PieChart4 from "./components/PieChart/PieChart4";
+
 
 function App() {
   return (
@@ -12,12 +16,16 @@ function App() {
     </div>  
   
       <div className='charts'>
-          <div className =" ui container">
+          <div className ="barCharts">
             <BarChart1/>
           </div>
-          <br/>
-          <div className =" ui container">
-              <PieChart/>
+
+          <div className ="pieCharts">
+            <h2>Flotilla Carbon Footprint Score by Category</h2>
+              <PieChart id="pieChart"/>
+              <PieChart2 id="pieChart"/>
+              <PieChart3 id="pieChart"/>
+              <PieChart4 id="pieChart"/>
           </div>
 
       </div>

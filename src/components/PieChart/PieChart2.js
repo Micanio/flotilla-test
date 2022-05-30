@@ -5,7 +5,8 @@ import { Doughnut} from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
-const total = {
+
+const leedsData = {
     labels: ['Energy', 'Water', 'Waste',
         'Travel', 'Postage', 'Stationery'],
     datasets: [
@@ -27,20 +28,15 @@ const total = {
                 '#35014F',
                 '#07564d'
             ],
-            data: [58.53, 55.13, 113.74, 120.83, 232.72, 1.56],
-            options: {
-                title: {
-                    text: ['Flotilla Carbon Footprint Score by Category', 'all locations 2020']
-                }
-            }
+            data: [9.41, 2.10, 41.60, 1.37, 25.50, 0.875]
         }
     ]
 }
-const totalOptions = {
+const leedsOptions = {
     plugins: {
         title: {
             display:true,
-            text: 'All locations 2020',
+            text: 'Leeds 2020',
             font: {
                 size: 20
             }
@@ -53,13 +49,14 @@ const totalOptions = {
 }
 
 
+
 export default class PieChart extends React.Component {
     render() {
         return (
             <div className='pieChart'>
                 <Doughnut
-                    data={total}
-                    options={totalOptions}
+                    data={leedsData}
+                    options={leedsOptions}
                     id="pieChart"
                 />
             </div>
